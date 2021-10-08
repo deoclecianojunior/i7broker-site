@@ -1,12 +1,15 @@
-import '../styles/vendor/bootstrap/css/bootstrap.min.css';
-import '../styles/vendor/bootstrap-icons/bootstrap-icons.css';
-import '../styles/vendor/animate.css/animate.min.css';
-import '../styles/vendor/boxicons/css/boxicons.min.css';
-import '../styles/vendor/fontawesome-free/css/all.min.css';
-import '../styles/vendor/glightbox/css/glightbox.min.css';
-import '../styles/vendor/remixicon/remixicon.css';
-import '../styles/vendor/swiper/swiper-bundle.min.css';
-import '../styles/css/style.css';
+import '../public/assets/css/bootstrap.min.css';
+import '../public/assets/css/bootstrap-select.min.css';
+import '../public/assets/css/all.min.css';
+import '../public/assets/webfonts/flaticon/flaticon.css';
+import '../public/assets/css/owl.css';
+import '../public/assets/css/jquery.fancybox.min.css';
+import '../public/assets/css/layerslider.css';
+import '../public/assets/css/template.css';
+import '../public/assets/css/style.css';
+import '../public/assets/css/colors/color.css';
+import '../public/assets/css/clock.css';
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

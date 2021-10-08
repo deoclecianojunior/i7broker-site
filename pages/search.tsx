@@ -5,16 +5,30 @@ import HomeSearch from '@components/home-search';
 import Topbar from '@components/topbar';
 import Head from 'next/head';
 
-export default function Search() {
+export async function getServerSideProps(context: any) {
+
+  return {
+    props: {
+      id: 'adfasdfd'
+    }
+  }
+}
+
+
+/**
+ * @param props 
+ * @returns 
+ */
+export default function Search(props: any) {
   return (
     <>
       <Head>
-        <title>For Sale Bootstrap Template - Index</title>
+        <title>For Sale Bootstrap Template - Index {props.id}</title>
       </Head>
       <Topbar />
       <main>
         <Header />
-        <HomeSearch />
+        <HomeSearch props={props}/>
         <HomeAbout />
         <Footer />
       </main>

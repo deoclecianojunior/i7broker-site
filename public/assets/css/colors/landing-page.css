@@ -1,0 +1,226 @@
+/*==================================
+Theme Color All Codes Variable
+==================================*/
+
+:root {
+    --theme-general-color: #6d7175;
+    /* theme gray color */
+}
+
+:root {
+    --theme-primary-color: #53b141;
+    /* theme primary color */
+}
+
+:root {
+    --theme-secondary-color: #253248;
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --theme-light-color: #f8f9fa;
+    /* theme light gray color */
+}
+
+:root {
+    --theme-gray-color: #efefef;
+    /* theme gray color */
+}
+
+:root {
+    --theme-dark-color: #12171f;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-extra-color: #1d2a40;
+    /* theme extra color */
+}
+
+:root {
+    --theme-footer-color: #12171f;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(83, 177, 65, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(36, 50, 74, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-dark-opacity-color: rgba(24, 26, 29, .8);
+    /* theme dark opacity color */
+}
+
+:root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+:root {
+    --text-light-color: #8a99b3;
+    /* text light color */
+}
+
+:root {
+    --text-gray-color: #c3c3c3;
+    /* theme text gray color */
+}
+
+:root {
+    --theme-primary-color-rgba: 83, 177, 65;
+    /* theme secondary color */
+}
+
+
+/*==================================
+Font Variable
+==================================*/
+
+:root {
+    --theme-general-font: 'Jost', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-hiperlink-font: 'Jost', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-highlight-font: 'Jost', sans-serif;
+    /* Font used in title or special area */
+}
+
+
+/*==================================
+Extra Css
+==================================*/
+
+.navbar-nav .nav-link.dropdown-toggle {
+    padding-right: 35px !important
+}
+
+.navbar-nav>li.dropdown>a.nav-link::after,
+.navbar-nav>li.dropdown .dropdown-toggle::after {
+    right: 20px;
+}
+
+.navbar-brand {
+    display: block !important;
+}
+
+.mix-tab ul li,
+.tab-simple ul li {
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0;
+}
+
+.purchase-btn-envato {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+
+.purchase-btn-envato a {
+    z-index: 100;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a {
+    font-weight: 400
+}
+
+.sub-title,
+.dropdown-item,
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 400
+}
+
+.list-bullate li {
+    font-weight: 500
+}
+
+.dropdown-item {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+.purchase .btn-buy {
+    display: block;
+    padding: 8px 20px 4px 10px;
+    border-radius: 40px;
+}
+
+.purchase img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.demo-item .demo-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    background-color: #f4f4f4;
+    padding-top: 100%;
+    background-position: center top;
+    transition: background-position .6s linear, box-shadow .3s
+}
+
+.demo-item a:hover .demo-bg,
+.demo-item a:focus .demo-bg {
+    background-position: center bottom;
+    transition: background-position 2s linear, box-shadow .3s
+}
+
+@media screen and (max-width: 1199px) {
+    .purchase .btn-buy {
+        padding: 12px 25px;
+    }
+    .purchase img {
+        display: none;
+    }
+}

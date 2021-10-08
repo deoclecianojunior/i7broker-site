@@ -1,23 +1,28 @@
+import AssetJs from '@components/asset-js';
 import Footer from '@components/footer';
 import Header from '@components/header';
 import HomeAbout from '@components/home-about';
 import HomeSearch from '@components/home-search';
-import Topbar from '@components/topbar';
 import Head from 'next/head';
 
-export default function Home() {
+export async function getServerSideProps(context: any) {
+  return {
+    props: {
+      id: '1234'
+    }
+  }
+}
+
+export default function Home(props: any) {
   return (
     <>
-      <Head>
-        <title>For Sale Bootstrap Template - Index</title>
-      </Head>
-      <Topbar />
-      <main>
+      <div id="page_wrapper">
         <Header />
         <HomeSearch />
         <HomeAbout />
         <Footer />
-      </main>
+      </div>
+      <AssetJs />
     </>
   )
 }
