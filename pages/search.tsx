@@ -2,7 +2,6 @@ import Footer from '@components/footer';
 import Header from '@components/header';
 import HomeAbout from '@components/home-about';
 import HomeSearch from '@components/home-search';
-import Topbar from '@components/topbar';
 import Head from 'next/head';
 
 export async function getServerSideProps(context: any) {
