@@ -4,8 +4,6 @@ export default function AssetJs() {
       <script src="../assets/js/jquery.min.js"></script>
       <script src="../assets/js/popper.min.js"></script>
       <script src="../assets/js/bootstrap.min.js"></script>
-      <script src="../assets/js/bootstrap-select.min.js"></script>
-      <script src="../assets/js/jquery.fancybox.min.js"></script>
       <script src="../assets/js/owl.js"></script>
       <script src="../assets/js/range/tmpl.js"></script>
       <script src="../assets/js/range/jquery.dependClass.js"></script>
@@ -14,7 +12,7 @@ export default function AssetJs() {
       <script src="../assets/js/wow.js"></script>
       <script src="../assets/js/mixitup.min.js"></script>
       <script src="../assets/js/paraxify.js"></script>
-      <script src="../assets/js/custom.js"></script>
+      <script src="../assets/js/custom.min.js"></script>
     </>
   )
 }
