@@ -2,7 +2,6 @@ import AssetJs from '@components/asset-js';
 import Footer from '@components/footer';
 import Header from '@components/header';
 import HomeProperties from '@components/home-properties';
-import { useRouter } from 'next/router';
 
 /**
  * @param context 
@@ -19,7 +18,7 @@ export async function getServerSideProps(context: any) {
     businessType = 'rent'
   }
 
-  const res = await fetch(`${process.env.BASE_URL_API}/site/properties?search=${businessType}:true&&include=cities,states,example_photo`)
+  const res = await fetch(`${process.env.BASE_URL_API}site/properties?search=${businessType}:true&&include=cities,states,example_photo`)
   const data = await res.json()
   return {
     props: {

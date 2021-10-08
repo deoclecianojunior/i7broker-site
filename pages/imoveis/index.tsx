@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
  */
 export async function getServerSideProps(context: any) {
 
-  const res = await fetch(`http://api.localhost.for_sale.develop/v1/site/properties?include=cities,states,example_photo`)
+  const res = await fetch(`${process.env.BASE_URL_API}site/properties?include=cities,states,example_photo`)
   const data = await res.json()
   return {
     props: {

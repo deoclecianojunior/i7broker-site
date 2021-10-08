@@ -10,7 +10,7 @@ import './imovel.module.css';
  * @returns 
  */
 export async function getServerSideProps(context: any) {
-    const res = await fetch(`http://api.localhost.for_sale.develop/v1/site/properties/${context.query.slug}?include=cities,states,property_types,all_property_images`)
+    const res = await fetch(`${process.env.BASE_URL_API}site/properties/${context.query.slug}?include=cities,states,property_types,all_property_images`)
     const data = await res.json()
     console.log(data)
     return {
