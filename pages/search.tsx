@@ -24,7 +24,6 @@ export default function Search(props: any) {
       <Head>
         <title>For Sale Bootstrap Template - Index {props.id}</title>
       </Head>
-      <Topbar />
       <main>
         <Header />
         <HomeSearch props={props}/>
