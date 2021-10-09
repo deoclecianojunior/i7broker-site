@@ -15,9 +15,12 @@ import './imovel.module.css';
       paths : [{
         params: {
             slug: 'modelo-de-contrato-de-locacao'
+        }, 
+        params: {
+            slug: 'apartamento-curitiba'
         }
       }],
-      fallback: true
+      fallback: 'blocking'
     }
   }
 
