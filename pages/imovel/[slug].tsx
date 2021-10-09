@@ -5,14 +5,29 @@ import Header from '@components/header';
 import RelatedProperties from '@components/related-properties';
 import Carousel from 'react-bootstrap/Carousel';
 import './imovel.module.css';
+
 /**
  * @param context 
  * @returns 
  */
-export async function getServerSideProps(context: any) {
-    const res = await fetch(`${process.env.BASE_URL_API}site/properties/${context.query.slug}?include=cities,states,property_types,all_property_images`)
+ export async function getStaticPaths(context: any) {
+    return {
+      paths : [{
+        params: {
+            slug: 'modelo-de-contrato-de-locacao'
+        }
+      }],
+      fallback: true
+    }
+  }
+
+/**
+ * @param context 
+ * @returns 
+ */
+export async function getStaticProps(context: any) {
+    const res = await fetch(`${process.env.BASE_URL_API}site/properties/${context.params.slug}?include=cities,states,property_types,all_property_images`)
     const data = await res.json()
-    console.log(data)
     return {
         props: {
             property: data.data
@@ -25,7 +40,6 @@ export async function getServerSideProps(context: any) {
  * @returns 
  */
 export default function Imoveis(props: any) {
-    console.log(props)
   return (
     <>
       <div id="page_wrapper" className="bg-light">
@@ -173,6 +187,7 @@ export default function Imoveis(props: any) {
             <script src="../assets/js/layerslider.transitions.js"></script>
             <script src="../assets/js/layerslider.kreaturamedia.jquery.js"></script>
             <script src="../assets/js/single-property-slide.js"></script>
+            <script src="../assets/js/bootstrap-select.min.js"></script>
         </>
     </>
   )
