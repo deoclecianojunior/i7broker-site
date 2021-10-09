@@ -12,11 +12,7 @@ import './imovel.module.css';
  */
  export async function getStaticPaths(context: any) {
     return {
-      paths : [{
-        params: {
-            slug: 'modelo-de-contrato-de-locacao'
-        }
-      }],
+      paths : [],
       fallback: 'blocking'
     }
   }
