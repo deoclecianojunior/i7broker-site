@@ -229,14 +229,11 @@
 
     }
 
-
-
     // MixIt-up tab calling
     if ($mix_tab.length) {
         var containerEl = document.querySelector('.mix-element');
         var mixer = mixitup(containerEl);
     }
-
 
     // Simple tab manus
     $(function() {

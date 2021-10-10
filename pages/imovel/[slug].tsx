@@ -181,13 +181,9 @@ export default function Imoveis(props: any) {
       </div>
       <AssetJs />
       return (
-        <>
-            <script src="../assets/js/greensock.js"></script>
-            <script src="../assets/js/layerslider.transitions.js"></script>
-            <script src="../assets/js/layerslider.kreaturamedia.jquery.js"></script>
-            <script src="../assets/js/single-property-slide.js"></script>
-            <script src="../assets/js/bootstrap-select.min.js"></script>
+            <>
+                <script src="../assets/js/jquery.fancybox.min.js"></script>
+            </>
         </>
-    </>
-  )
+    )
 }

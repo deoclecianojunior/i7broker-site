@@ -7,7 +7,6 @@ import '../public/assets/css/template.css';
 import '../public/assets/css/style.css';
 import '../public/assets/css/colors/color.css';
 
-
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
