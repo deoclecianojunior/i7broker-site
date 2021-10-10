@@ -27,7 +27,8 @@ export async function getStaticProps(context: any) {
     const data = await res.json()
     return {
         props: {
-            property: data.data
+            property: data.data,
+            baseUrl: process.env.BASE_URL_API
         }
     }
 }
@@ -62,7 +63,7 @@ export default function Imoveis(props: any) {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-4 order-xl-2">
-                        <Contact property={props.property} />
+                        <Contact property={props.property} baseUrl={props.baseUrl} />
                         <RelatedProperties/>
                     </div>
                     <div className="col-xl-8 order-xl-1">

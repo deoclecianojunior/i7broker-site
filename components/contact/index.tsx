@@ -2,12 +2,13 @@ import { useState } from 'react';
 
 export default function Contact(props: any) {
     const [sended, setSended] = useState(false)
-
+    
     const registerUser = async (event: any) => {
+        console.log(props)
         event.preventDefault() // don't redirect the page
         // where we'll add our form logic
         const res = await fetch(
-        `${process.env.BASE_URL_API}site/create-business`,
+        `${props.baseUrl}site/create-business`,
         {
             body: JSON.stringify({
                 "name": event.target.name.value,

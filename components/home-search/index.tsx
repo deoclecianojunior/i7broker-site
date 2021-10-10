@@ -11,62 +11,63 @@ export default function HomeSearch(searchData: any) {
       <div className="full-row p-0">
             <div className="container">
                 <div className="row justify-content-md-center">
-                    <div className="col-10">
+                    <div className="col-lg-10">
                         <div className="banner-search">
                             <h2 className="text-center mx-auto text-white">Acredite nos seus sonhos!</h2>
                             <span className="d-table mx-auto text-white font-medium mb-4">Vários imóveis a sua disposição</span>
                             <form action="#" className="banner-search-form bg-white p-4" method="POST">
                                 <div className="row">
                                     <div className="col-lg-10 col-md-8">
-                                        <input type="text" className="form-control" placeholder="Enter Keyword..." />
+                                        <input type="text" className="form-control" placeholder="Digite o código, cidade, bairro ou palavra-chave" />
                                     </div>
                                     <div className="col-lg-2 col-md-4">
-                                        <button className="btn btn-primary w-100">Search</button>
+                                        <button className="btn btn-primary w-100">Pesquisar</button>
                                     </div>
                                 </div>
                             </form>
                             <form className="bg-white rounded shadow-sm quick-search p-5 form-icon-right position-relative mt-4" action="#" method="post">
                                 <div className="row row-cols-lg-6 row-cols-md-3 row-cols-1 g-3">
                                     <div className="col">
-                                        <input type="text" className="form-control" name="keyword" placeholder="Enter Keyword..." />
-                                    </div>
-                                    <div className="col">
+                                        <label>Tipo</label>
                                         <select className="form-control">
-                                            <option>Property Types</option>
-                                            <option>House</option>
-                                            <option>Office</option>
-                                            <option>Appartment</option>
-                                            <option>Condos</option>
-                                            <option>Villa</option>
-                                            <option>Small Family</option>
-                                            <option>Single Room</option>
+                                            <option>Todos</option>
+                                            <option>Aluguel</option>
+                                            <option>Compra</option>
                                         </select>
                                     </div>
                                     <div className="col">
+                                        <label>Banheiros</label>
+                                        <select className="form-control">
+                                            <option>1+</option>
+                                            <option>2+</option>
+                                            <option>3+</option>
+                                            <option>4+</option>
+                                        </select>
+                                    </div>
+                                    <div className="col">
+                                        <label>Quartos</label>
+                                        <select className="form-control">
+                                            <option>1+</option>
+                                            <option>2+</option>
+                                            <option>3+</option>
+                                            <option>4+</option>
+                                        </select>
+                                    </div>
+                                    <div className="col">
+                                        <label>Preço minimo</label>
                                         <div className="position-relative">
-                                            <input type="text" className="form-control" name="location" placeholder="Location" />
-                                            <i className="flaticon-placeholder flat-mini icon-font y-center text-dark"></i>
+                                            <input type="number" className="form-control" name="location" placeholder="1000" />
                                         </div>
                                     </div>
                                     <div className="col">
+                                        <label>Preço máximo</label>
                                         <div className="position-relative">
-                                            <button className="form-control price-toggle toggle-btn" data-target="#data-range-price">Price <i className="fas fa-angle-down font-mini icon-font y-center text-dark"></i></button>
-                                            <div id="data-range-price" className="price_range price-range-toggle">
-                                                <div className="area-filter price-filter">
-                                                    <span className="price-slider">
-                                                    <input className="filter_price" type="text" name="price" value="0;10000000" />
-                                                </span>
-                                                </div>
-                                            </div>
+                                            <input type="number" className="form-control" name="location" placeholder="4000" />
                                         </div>
                                     </div>
                                     <div className="col">
-                                        <div className="position-relative">
-                                            <button className="form-control text-start toggle-btn" data-target="#aditional-check">Advanced <i className="fas fa-ellipsis-v font-mini icon-font y-center text-dark"></i></button>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <button className="btn btn-primary w-100">Search</button>
+                                    <label>&nbsp;</label>
+                                        <button className="btn btn-primary w-100">Pesquisar</button>
                                     </div>
                                     <div id="aditional-check" className="aditional-features p-5">
                                         <h5 className="mb-3">Aditional Options</h5>
