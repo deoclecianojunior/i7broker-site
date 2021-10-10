@@ -7,8 +7,7 @@ export default function Contact(props: any) {
         console.log(props)
         event.preventDefault() // don't redirect the page
         // where we'll add our form logic
-        const res = await fetch(
-        `${props.baseUrl}site/create-business`,
+        const res = await fetch(`${props.baseUrl}site/create-business`,
         {
             body: JSON.stringify({
                 "name": event.target.name.value,
@@ -24,7 +23,6 @@ export default function Contact(props: any) {
         }
         )
         const result = await res.json()
-        // document.getElementById("contact-form").reset()
         setSended(true);
     }
 
