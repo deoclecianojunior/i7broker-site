@@ -3,12 +3,12 @@ export default function HomeSearch(searchData: any) {
   
   return (
     <>
-      <div className="full-row p-0">
-      <Image
+    <Image
         src="/assets/images/background/baldyimoveis-home-land-a5320ba611540502.jpg"
         layout="fill"
         objectFit="cover"
         quality={100} />
+      <div className="full-row p-0">
             <div className="container">
                 <div className="row justify-content-md-center">
                     <div className="col-10">
