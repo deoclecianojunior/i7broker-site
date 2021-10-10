@@ -1,4 +1,5 @@
 import './item-property-rent.module.css';
+import Image from 'next/image'
 
 export default function ItemPropertyRent(props: any) {
   return (
@@ -14,7 +15,9 @@ export default function ItemPropertyRent(props: any) {
                         <span className="sale bg-secondary text-white">Venda</span>
                     }
                     </div>
-                    <a href={"/imovel/"+props.property.slug}><img src={props.property.example_photo.data.path} className="image-property" alt="Image Not Found!" /></a>
+                    <a href={"/imovel/"+props.property.slug}>
+                        <Image src={props.property.example_photo.data.path} className="image-property" layout='fill'/>
+                    </a>
                 </div>
                 <div className="property_text p-3">
                     <span className="d-inline-block text-primary">{props.property.cities.data.name} - {props.property.states.data.name}</span>

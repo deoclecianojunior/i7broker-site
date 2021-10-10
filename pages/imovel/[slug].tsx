@@ -5,17 +5,18 @@ import Header from '@components/header';
 import RelatedProperties from '@components/related-properties';
 import Carousel from 'react-bootstrap/Carousel';
 import './imovel.module.css';
+import Image from 'next/image'
 
 /**
  * @param context 
  * @returns 
  */
- export async function getStaticPaths(context: any) {
+export async function getStaticPaths(context: any) {
     return {
       paths : [],
       fallback: 'blocking'
     }
-  }
+}
 
 /**
  * @param context 
@@ -75,15 +76,17 @@ export default function Imoveis(props: any) {
                             </div>
                             <div className="row mb-2">
                                 <div className="col">
-                                    <Carousel>
+                                    <Carousel >
                                         {props.property.all_property_images.data.map((image:any, index: number) => {
                                             return (
                                                 <Carousel.Item>
-                                                    <img
-                                                        className="d-block"
+                                                    <Image
+                                                        className="image-property-size"
                                                         src={image.path}
                                                         alt="First slide"
-                                                        style={{width:"100%", maxHeight: "600px" ,objectFit:"contain"}}
+                                                        objectFit="contain"
+                                                        width={1000}
+                                                        height={600}
                                                     />
                                                 </Carousel.Item>
                                             )

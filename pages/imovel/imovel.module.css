@@ -1,0 +1,5 @@
+.image-property-size{
+    width:"100%" !important;
+    max-height: "600px" !important;
+    object-fit:"contain" !important
+}

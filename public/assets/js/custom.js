@@ -238,13 +238,6 @@
     }
 
 
-    //bootstrap selectpiker
-    $(function() {
-        $('.selectpicker').selectpicker();
-    });
-
-
-
     // Simple tab manus
     $(function() {
 

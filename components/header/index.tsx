@@ -1,5 +1,5 @@
-import header from './header.module.css'
-import style from '@styles/style.module.css';
+import Image from 'next/image'
+
 export default function Header() {
   return (
     <>
@@ -10,7 +10,7 @@ export default function Header() {
                         <div className="col">
                             <nav className="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
                                 <a className="navbar-brand" href={`${process.env.BASE_URL}`}>
-                                    <img className="nav-logo" src={'https://images.1negocio.com/imagens/site/logo/baldyimoveis-creci33217j-3-e9bcbe3611495702.png'} width={175} height={60} alt="Image not found !" />
+                                    <Image className="nav-logo" src='https://images.1negocio.com/imagens/site/logo/baldyimoveis-creci33217j-3-e9bcbe3611495702.png' width={175} height={60} alt="Image not found !" />
                                 </a>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
