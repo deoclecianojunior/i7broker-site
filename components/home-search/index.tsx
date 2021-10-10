@@ -7,8 +7,7 @@ export default function HomeSearch(searchData: any) {
         src="/assets/images/background/baldyimoveis-home-land-a5320ba611540502.jpg"
         layout="fill"
         objectFit="cover"
-        quality={100} 
-        priority={100}/>
+        quality={100} />
       <div className="full-row p-0">
             <div className="container">
                 <div className="row justify-content-md-center">
