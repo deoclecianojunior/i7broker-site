@@ -7,7 +7,7 @@ export default function Contact(props: any) {
         event.preventDefault() // don't redirect the page
         // where we'll add our form logic
         const res = await fetch(
-        'http://api.localhost.for_sale.develop/v1/site/create-business',
+        `${process.env.BASE_URL_API}site/create-business`,
         {
             body: JSON.stringify({
                 "name": event.target.name.value,
