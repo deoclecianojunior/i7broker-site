@@ -1,4 +1,4 @@
-import Styles from '@styles/style.module.css';
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
                         <div className="footer-widget mb-4">
                             <div className="footer-logo mb-4">
                                 <a href="#">
-                                <img className="nav-logo" src={'https://images.1negocio.com/imagens/site/logo/baldyimoveis-creci33217j-3-e9bcbe3611495702.png'} width={175} height={60} alt="Image not found !" />
+                                <Image className="nav-logo" src='https://images.1negocio.com/imagens/site/logo/baldyimoveis-creci33217j-3-e9bcbe3611495702.png' width={175} height={60} />
                                 </a>
                             </div>
                             <p>
