@@ -12,7 +12,7 @@ export default function AssetJs() {
       <script src="../assets/js/wow.js"></script>
       <script src="../assets/js/mixitup.min.js"></script>
       <script src="../assets/js/paraxify.js"></script>
-      <script src="../assets/js/custom.js"></script>
+      <script src="../assets/js/custom.min.js"></script>
     </>
   )
 }
